@@ -14,16 +14,19 @@ import BaseLayout from './layouts/BaseLayout/BaseLayout'
 const Routes = () => {
   return (
     <Router>
+      <Set wrap={BaseLayout}>
+        <Route path="/" page={HomePage} name="home" />
+        <Route path="/contact-us" page={ContactUsPage} name="contactUs" />
+      </Set>
       <Route path="/login" page={LoginPage} name="login" />
       <Route path="/signup" page={SignupPage} name="signup" />
       <Route path="/forgot-password" page={ForgotPasswordPage} name="forgotPassword" />
       <Route path="/reset-password" page={ResetPasswordPage} name="resetPassword" />
       <Private unauthenticated="login">
         <Set wrap={BaseLayout}>
-          <Route path="/" page={HomePage} name="home" />
+          <Route path="/video-builder" page={VideoBuilderPage} name="videoBuilder" />
         </Set>
       </Private>
-
       <Route notfound page={NotFoundPage} />
     </Router>
   )
