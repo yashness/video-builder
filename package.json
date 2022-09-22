@@ -22,10 +22,5 @@
   "prisma": {
     "seed": "yarn rw exec seed"
   },
-  "packageManager": "yarn@3.2.1",
-  "dependencies": {
-    "@remotion/cli": "^3.1.11",
-    "@remotion/player": "^3.1.11",
-    "remotion": "^3.1.11"
-  }
+  "packageManager": "yarn@3.2.1"
 }

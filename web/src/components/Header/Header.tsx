@@ -27,7 +27,7 @@ const LoginControls = () => {
   const { isAuthenticated, currentUser, logOut } = useAuth()
   return isAuthenticated ? (
     <div>
-      <span className="text-gray-300">Logged in as {currentUser.email} | </span>{' '}
+      <span className="text-gray-500">Logged in as {currentUser.email} | </span>{' '}
       <button className="hover:text-blue-900" type="button" onClick={logOut}>
         Logout
       </button>
@@ -41,7 +41,7 @@ const LoginControls = () => {
         Login
       </Link>
       <Link
-        to={routes.videoBuilder()}
+        to={routes.videoBuilderHome()}
         className="mr-2 rounded-lg bg-primary-700 px-4 py-2 text-sm font-medium text-white hover:bg-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 lg:px-5 lg:py-2.5"
       >
         Open Vuilder
@@ -114,7 +114,7 @@ const NavMenu = () => (
 const Header = () => {
   return (
     <header>
-      <nav className="border-gray-200 bg-white px-4 py-2.5 dark:bg-gray-800 lg:px-6">
+      <nav className="border border-b-gray-400 bg-white px-4 py-3 dark:bg-gray-800 lg:px-6">
         <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between">
           <Logo />
           <div className="flex items-center lg:order-2">

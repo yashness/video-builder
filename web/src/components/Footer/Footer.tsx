@@ -2,12 +2,9 @@ import { Link, routes } from '@redwoodjs/router'
 
 const Footer = () => {
   return (
-    <footer className="bg-white p-4 dark:bg-gray-800 md:p-8 lg:p-10">
+    <footer className="mt-8 border border-t-gray-300 bg-white p-4 dark:bg-gray-800 md:p-8 lg:p-10">
       <div className="mx-auto max-w-screen-xl text-center">
-        <a
-          href="/#"
-          className="flex items-center justify-center text-2xl font-semibold text-gray-900 dark:text-white"
-        >
+        <div className="flex items-center justify-center text-2xl font-semibold text-gray-900 dark:text-white">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-10 w-10 pr-2"
@@ -23,7 +20,7 @@ const Footer = () => {
             />
           </svg>
           Vuilder
-        </a>
+        </div>
         <p className="my-6 text-gray-500 dark:text-gray-400">
           Create video in seconds! Submit data, download the video.
         </p>

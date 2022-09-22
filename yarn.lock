@@ -4126,7 +4126,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@remotion/media-utils@npm:3.1.11":
+"@remotion/media-utils@npm:3.1.11, @remotion/media-utils@npm:^3.1.11":
   version: 3.1.11
   resolution: "@remotion/media-utils@npm:3.1.11"
   dependencies:
@@ -4147,6 +4147,13 @@ __metadata:
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
   checksum: e0a1892dcd25759e0b4fc1f8e5c0b3ad1f709b65c80505f8fb997b4392237395915dfadba2c030bd8ffdbf1aa882cf1b046c68918f15f82d607ad5185cedf3fb
+  languageName: node
+  linkType: hard
+
+"@remotion/preload@npm:^3.1.11":
+  version: 3.1.11
+  resolution: "@remotion/preload@npm:3.1.11"
+  checksum: 689891617a4c24648aa497e3f267ef95d0c0230f01ebc55d3bdc964f7ddc5a592b501c02670759a0a22bb392b4721fafa9670d54085b46e3356176745bfd6ac1
   languageName: node
   linkType: hard
 
@@ -18799,6 +18806,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"parse-srt@npm:^1.0.0-alpha":
+  version: 1.0.0-alpha
+  resolution: "parse-srt@npm:1.0.0-alpha"
+  checksum: 09244265e1c3fc02e8b0ed90d1cb20d5cdca16295be3e35782f46c69752d28fa98a8d095c9255cda207166ae40604c7e0e7d1eed0d7213e2ac5eeb527bb07ed4
+  languageName: node
+  linkType: hard
+
 "parse5-htmlparser2-tree-adapter@npm:^7.0.0":
   version: 7.0.0
   resolution: "parse5-htmlparser2-tree-adapter@npm:7.0.0"
@@ -21199,10 +21213,7 @@ __metadata:
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
     "@redwoodjs/core": 2.2.0
-    "@remotion/cli": ^3.1.11
-    "@remotion/player": ^3.1.11
     prettier-plugin-tailwindcss: ^0.1.13
-    remotion: ^3.1.11
   languageName: unknown
   linkType: soft
 
@@ -24267,12 +24278,18 @@ __metadata:
     "@redwoodjs/forms": 2.2.0
     "@redwoodjs/router": 2.2.0
     "@redwoodjs/web": 2.2.0
+    "@remotion/cli": ^3.1.11
+    "@remotion/media-utils": ^3.1.11
+    "@remotion/player": ^3.1.11
+    "@remotion/preload": ^3.1.11
     autoprefixer: ^10.4.8
+    parse-srt: ^1.0.0-alpha
     postcss: ^8.4.14
     postcss-loader: ^7.0.1
     prop-types: 15.8.1
     react: 17.0.2
     react-dom: 17.0.2
+    remotion: ^3.1.11
     tailwindcss: ^3.1.7
   languageName: unknown
   linkType: soft

@@ -24,7 +24,9 @@ const Routes = () => {
       <Route path="/reset-password" page={ResetPasswordPage} name="resetPassword" />
       <Private unauthenticated="login">
         <Set wrap={BaseLayout}>
-          <Route path="/video-builder" page={VideoBuilderPage} name="videoBuilder" />
+          <Route path="/video-builder-home" page={VideoBuilderHomePage} name="videoBuilderHome" />
+          <Route path="/video-builder-app/audiogram-video-template" page={AudiogramVideoTemplatePage} name="audiogramVideoTemplate" />
+          <Route path="/video-builder-app/wikipedia-video-template" page={WikipediaVideoTemplatePage} name="wikipediaVideoTemplate" />
         </Set>
       </Private>
       <Route notfound page={NotFoundPage} />

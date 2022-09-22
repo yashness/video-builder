@@ -1,14 +1,14 @@
 import { render } from '@redwoodjs/testing/web'
 
-import VideoBuilderPage from './VideoBuilderPage'
+import VideoBuilderHomePage from './VideoBuilderHomePage'
 
 //   Improve this test with help from the Redwood Testing Doc:
 //   https://redwoodjs.com/docs/testing#testing-pages-layouts
 
-describe('VideoBuilderPage', () => {
+describe('VideoBuilderHomePage', () => {
   it('renders successfully', () => {
     expect(() => {
-      render(<VideoBuilderPage />)
+      render(<VideoBuilderHomePage />)
     }).not.toThrow()
   })
 })
